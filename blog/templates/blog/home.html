@@ -1,0 +1,37 @@
+<!-- blog/templates/blog/home.html -->
+{% extends "blog/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h2>Bem-vindo ao blog da Nat! <br> </h2>
+    <h3> <br> Gostos: <br> </h3>
+    <div class="row">
+        {% for gosto in gostos_pessoais %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    {% if gosto.imagem %}
+                        <img src="{{ gosto.imagem.url }}" class="card-img-top" alt="{{ gosto.nome }}">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ gosto.nome }}</h5>
+                        <p class="card-text">{{ gosto.descricao }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <h3> <br> Curiosidades:</h3>
+    <p> <br> </p>
+    <ul>
+        {% for curiosidade in curiosidades %}
+            <li>
+                {% if curiosidade.imagem %}
+                    <img src="{{ curiosidade.imagem.url }}" alt="{{ curiosidade.nome }}" class="imagem-curiosidade">
+                {% endif %}
+                {{ curiosidade.nome }}: {{ curiosidade.descricao }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+

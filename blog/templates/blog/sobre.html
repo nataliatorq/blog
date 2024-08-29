@@ -1,0 +1,19 @@
+<!-- blog/templates/blog/sobre.html -->
+{% extends "blog/base.html" %}
+
+{% block title %}Sobre{% endblock %}
+
+{% block content %}
+    <h2>Sobre mim</h2>
+    <div class="sobre-container">
+        {% if sobre_mim.imagem %}
+            <div class="imagem-perfil">
+                <img src="{{ sobre_mim.imagem.url }}" alt="{{ sobre_mim.nome }}">
+            </div>
+        {% endif %}
+        <div class="informacoes-pessoais">
+            <p>{{ sobre_mim.descricao }}</p>
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,71 @@
+/* blog/static/css/style.css */
+
+/* Regras gerais para o layout e o design */
+body {
+    padding-top: 56px; /* Evita que o conteúdo fique oculto atrás do cabeçalho fixo */
+}
+
+.navbar {
+    background-color: #eabee6; /* Substitua com a cor desejada */
+}
+
+.navbar a.nav-link{
+    color: #ffffff; /* Substitua com a cor desejada para o texto dos links */
+}
+
+.navbar a.navbar-brand{
+    color: #ffffff; /* Substitua com a cor desejada para o texto dos links */
+}
+
+.navbar a.nav-link:hover {
+    color: #ec2cb8; /* Substitua com a cor desejada para o texto dos links ao passar o mouse */
+}
+
+footer {
+    background-color: #eabee6; /* Substitua com a cor desejada */
+    color: #ffffff; /* Muda a cor do texto do rodapé */
+}
+
+h2{
+    text-align: center;
+}
+
+
+h2, h3 {
+    color: #e486dc;
+}
+
+.card {
+    border-radius: 0.5rem; /* Arredonda os cantos das cartas */
+}
+
+/* Estilo para a seção "Sobre" */
+.sobre-container {
+    display: flex; /* Utiliza flexbox para alinhar itens em linha */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px; /* Espaçamento interno da seção */
+}
+
+.imagem-perfil img {
+    border-radius: 50%; /* Torna a imagem redonda */
+    width: 150px; /* Largura fixa da imagem */
+    height: 150px; /* Altura fixa da imagem */
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorção */
+    border: 2px solid #ddd; /* Adiciona uma borda opcional ao redor da imagem */
+}
+
+.informacoes-pessoais {
+    max-width: 600px; /* Largura máxima do texto */
+}
+
+/* Estilo para imagens de curiosidade na página Home */
+.imagem-curiosidade {
+    border-radius: 50%; /* Torna a imagem redonda */
+    width: 200px; /* Largura fixa da imagem */
+    height: 200px; /* Altura fixa da imagem */
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorção */
+    border: 2px solid #ddd; /* Adiciona uma borda opcional ao redor da imagem */
+    margin-bottom: 20px;
+    
+}
